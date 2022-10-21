@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80
+    container_name: server-web-app
+    volumes:
+      - ./src:/var/www/html
