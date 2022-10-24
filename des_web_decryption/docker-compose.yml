@@ -7,5 +7,3 @@ services:
     ports:
       - 80:80
     container_name: web-app
-    volumes:
-      - ./src:/var/www/html
