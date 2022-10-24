@@ -1,2 +1,4 @@
 FROM php:7.3-apache
-EXPOSE 80
+WORKDIR /var/www/html
+COPY ./src .
+EXPOSE 8080
